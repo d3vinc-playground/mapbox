@@ -10,12 +10,12 @@
     <div id="map" style="width: 400px; height: 300px"></div>
     <iframe
       id="geojson"
-      src="./line_layer.json"
+      src="./geojson.json"
       onload="(()=>{try{window.geojsonData=JSON.parse(this.contentWindow.document.body.textContent.trim())}catch(e){console.warn(e)}this.remove();})();"
       onerror="((err)=>console.warn(err))();"
       style="display: none"
     ></iframe>
     <script src="../env.js"></script>
-    <script src="./line_layer.js"></script>
+    <script src="./mouse_over_layer.js"></script>
   </body>
 </html>
