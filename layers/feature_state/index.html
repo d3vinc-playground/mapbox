@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Feature state changes layer style</h1>
+    <div id="map" style="width: 400px; height: 300px"></div>
+    <input type="checkbox" id="select-button">Select way/1</input>
+    <input type="checkbox" id="hover-button">Hover way/1</input>
+    <iframe
+      id="geojson"
+      src="./geojson.json"
+      onload="(()=>{try{window.geojsonData=JSON.parse(this.contentWindow.document.body.textContent.trim())}catch(e){console.warn(e)}this.remove();})();"
+      onerror="((err)=>console.warn(err))();"
+      style="display: none"
+    ></iframe>
+    <script src="../../env.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
