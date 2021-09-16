@@ -1,0 +1,51 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "node/1" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.82399126887321, 1.2650066932097765]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "node/2" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.82399797439575, 1.2647613308878172]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "node/3" },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [103.8238973915577, 1.2648887047736923]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "way/1" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [103.82399126887321, 1.2650066932097765],
+          [103.82399797439575, 1.2647613308878172]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "way/2" },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [103.82399126887321, 1.2650066932097765],
+          [103.8238973915577, 1.2648887047736923]
+        ]
+      }
+    }
+  ]
+}
