@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Use circle layer to render GeoJSON</h1>
+    <div>Render a GeoJSON <code>Point</code> feature.</div>
+    <div id="map" style="width: 400px; height: 200px"></div>
+    <br />
+    <div>Render a GeoJSON <code>LineString</code> feature.</div>
+    <div id="map2" style="width: 400px; height: 300px"></div>
+    <iframe
+      id="geojson"
+      src="./circle_layer.json"
+      onload="(()=>{try{window.geojsonData=JSON.parse(this.contentWindow.document.body.textContent.trim())}catch(e){console.warn(e)}this.remove();})();"
+      onerror="((err)=>console.warn(err))();"
+      style="display: none"
+    ></iframe>
+    <iframe
+      id="geojson"
+      src="./circle_layer_linestring.json"
+      onload="(()=>{try{window.geojsonData2=JSON.parse(this.contentWindow.document.body.textContent.trim())}catch(e){console.warn(e)}this.remove();})();"
+      onerror="((err)=>console.warn(err))();"
+      style="display: none"
+    ></iframe>
+    <script src="../env.js"></script>
+    <script src="./circle_layer.js"></script>
+  </body>
+</html>
